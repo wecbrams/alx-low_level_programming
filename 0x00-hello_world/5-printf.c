@@ -2,7 +2,7 @@
 
 /*
  * main -serves as the entry point for the program
- * Return _Always 0 (Success)
+ * Return :Always 0 (Success)
  */
 
 int main(void)
