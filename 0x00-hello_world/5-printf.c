@@ -1,8 +1,9 @@
 #include<stdio.h>
 
 /*
- * main - Serves as the entry point for the program
- * Return: Always 0 (Success)
+ * main - prints the phrases with proper grammar,
+ * but the outcome is a piece of art,
+ * Return: 0 if exited properly, non-zero otherwis
  */
 
 int main(void)
