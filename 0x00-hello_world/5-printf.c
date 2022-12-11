@@ -1,7 +1,8 @@
 #include<stdio.h>
 
 /*
- * main - prints the phrases with proper grammar,
+ * main - main block
+ * Description: Prints the phrases with proper grammar,
  * but the outcome is a piece of art,
  * Return: 0 if exited properly, non-zero otherwise
  */
