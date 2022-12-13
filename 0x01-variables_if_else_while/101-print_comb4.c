@@ -18,13 +18,13 @@ int main(void)
 {
 	int x, y, z;
 
-	for(x = 48; x < 58; x++)
+	for (x = 48; x < 58; x++)
 	{
-		for(y = 49; y < 58; y++)
+		for (y = 49; y < 58; y++)
 		{
-			for(z = 50; z < 58; z++)
+			for (z = 50; z < 58; z++)
 			{
-				if(y > x && z > y)
+				if (y > x && z > y)
 				{
 					putchar(44);
 					putchar(32);
@@ -33,6 +33,6 @@ int main(void)
 		}
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
 

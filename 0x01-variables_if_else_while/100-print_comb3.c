@@ -17,15 +17,15 @@ int main(void)
 {
 	int x, y;
 
-	for(x = 48; x < 58; x++)
+	for (x = 48; x < 58; x++)
 	{
-		for(y = 49; y < 58; y++;)
+		for (y = 49; y < 58; y++;)
 		{
-			if(y > x)
+			if (y > x)
 			{
 				putchar(x);
 				putchar(x);
-				if(x < 56 || y < 57)
+				if (x < 56 || y < 57)
 				{
 					putchar(44);
 					putchar(32);
@@ -34,6 +34,6 @@ int main(void)
 		}
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
 
