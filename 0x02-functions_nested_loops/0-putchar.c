@@ -10,11 +10,12 @@ int main(void)
 {
 	char str[]="_putchar";
 	int ch = 0;
+	void _putcha();
 
-	while (str[i] != '\0')
+	while (str[ch] != '\0')
 	{
 		_putchar(str[ch]);
-		ch++
+		ch++;
 	}	
 	_putchar('\n');
 
