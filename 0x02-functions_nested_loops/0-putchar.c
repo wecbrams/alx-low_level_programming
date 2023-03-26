@@ -1,4 +1,4 @@
-#include "main.h"
+#include"main.h"
 
 /**
  * main - Entry point
@@ -17,4 +17,3 @@ int main(void)
 
 	return (0);
 }
-
