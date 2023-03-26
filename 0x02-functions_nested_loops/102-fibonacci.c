@@ -15,12 +15,14 @@ int main(void)
 	{
 	if (c % 2 == 0)
 	{
-	counter += c;
+	count += c;
 	}
 	a = b;
 	b = c;
 	c = a + b;
 	}
 	printf("%d\n", counter);
+
 	return (0);
 }
+
