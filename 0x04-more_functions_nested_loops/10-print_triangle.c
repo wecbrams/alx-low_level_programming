@@ -11,13 +11,14 @@
 void print_triangle(int size)
 {
 	
-	int i = 1, ii;
+	int i = 1;
+	int ii;
 
 
 	while (i <= size && size > 0)
 	{
 		ii = 0;
-		while (ii < size && size > 1)
+		while (ii < size && size < 0)
 		{
 			_putchar(' ');
 			ii++;

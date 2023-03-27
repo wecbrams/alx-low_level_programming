@@ -6,6 +6,7 @@
  * 
  * Return: square root of x
  */
+
 int main(void)
 {
 	long i;
@@ -17,5 +18,7 @@ int main(void)
 		num /= i;
 	}
 	printf("%li\n", num);
+
 	return (0);
 }
+
