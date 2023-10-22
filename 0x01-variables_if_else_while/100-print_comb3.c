@@ -1,34 +1,25 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - main block
- * Description: Print alll possible combinations of two digits.
- * Numbers must be separeted by commas and space.
- * 01 and 10 are considered as the same combination of the two digits 
- * Print only the smallest conbination of two digits.
- * Numbers shi=ould be printed in ascending order, with two digits.
- * You can only use 'putchar'.
- * You can only use 'putchar' up to 5 times.
- * You are not allowed to use any variable of type 'char'.
- * Return: 0
+ * main - prints all possible different combinations of two digits
+ * Return: ALways 0 (Success)
  */
-
 int main(void)
 {
-	int x, y;
+	int n, m;
 
-	for (x = 48; x < 58; x++)
+	for (n = 48; n <= 56; n++)
 	{
-		for (y = 49; y < 58; y++;)
+		for (m = 49; m <= 57; m++)
 		{
-			if (y > x)
+			if (m > n)
 			{
-				putchar(x);
-				putchar(x);
-				if (x < 56 || y < 57)
+				putchar(n);
+				putchar(m);
+				if (n != 56 || m != 57)
 				{
-					putchar(44);
-					putchar(32);
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
@@ -36,4 +27,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
