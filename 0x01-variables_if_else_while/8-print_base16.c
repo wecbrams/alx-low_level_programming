@@ -1,27 +1,22 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - main block
- * Description: Print all numbers of base 64 in lowercase.
- * You can only use 'putchar', and only 3 times.
- * Return: 0
+ * main - Prints numbers between 0 to 9 and letters between a to f.
+ *
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int x;
-	char c;
+	int i;
 
-	for (x = 48; x < 58; x++)
+	for (i = 48; i < 58; i++)
 	{
-		putchar(x);
+		putchar(i);
 	}
-
-	for (c = 'a'; c < 'g'; c++)
+	for (i = 97; i < 103; i++)
 	{
-		putchar(c);
+		putchar(i);
 	}
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
-
