@@ -1,39 +1,29 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - main block
- * Description: Print all possible  combinations of two two-digit numbers.
- * Numbers should range from 0 to 99.
- * The two numbers should be separeted by a space.
- * all numbers should be printed with two digits. 1 should be printed as 01.
- * combinations of numbers must be separeted by a comma followed by a space.
- * Combination of numbers should be printed in ascending order.
- * '00 001' and '01 00' are considered as the same combination.
- * You can only use 'putchar' to print to console.
- * You can only use 'putchar' up to 8 times.
- * You are not allowed to use any variable of type 'char'.
- * Return: 0
+ * main - prints all possible different combinations of three digits
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int x, y;
+	int n, m, l;
 
-	for (x = 0; x < 100; x++)
+	for (n = 48; n < 58; n++)
 	{
-		for (y = 0; y < 100; y++)
+		for (m = 49; m < 58; m++)
 		{
-			if (x < y)
+			for (l = 50; l < 58; l++)
 			{
-				putchar((x / 10) + 48);
-				putchar((x % 10) + 48);
-				putchar(' ');
-				putchar((y / 10) + 48);
-				putchar((y / 10) + 48);
-				if (x != 98 || y != 99)
+				if (l > m && m > n)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(n);
+					putchar(m);
+					putchar(l);
+					if (n != 55 || m != 56)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
@@ -41,4 +31,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
