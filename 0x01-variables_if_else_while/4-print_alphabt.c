@@ -1,25 +1,19 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - prints the alphabet in lowercase,
- * followed by a new line, except q and e
+ * main - Prints the alphabet.
+ *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	char c = 'a';
+char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
-	while (c <= 'z')
+	for (i = 0; i < 52; i++)
 	{
-		if (c != 'e' && c != 'q')
-		{
-			putchar(c);
-		}
-		c++;
+		putchar(alp[i]);
 	}
-	
 	putchar('\n');
 	return (0);
 }
-
