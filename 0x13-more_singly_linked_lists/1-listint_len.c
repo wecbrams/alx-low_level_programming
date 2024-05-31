@@ -1,27 +1,20 @@
 #include "lists.h"
 
 /**
- * reverse_listint - the function that reverses a listint_t
- * @head: double pointer
+ * listint_len - returns the number of elements in
+ * a linked list.
+ * @h: head of a list.
  *
- * Return: a pointer to the first node of the reversed list
+ * Return: numbers of nodes.
  */
-listint_t *reverse_listint(listint_t **head)
+size_t listint_len(const listint_t *h)
 {
-	listint_t *previous, *next;
+	size_t nnodes = 0;
 
-	if (head == NULL || *head == NULL)
-		return (NULL);
-	if ((*head)->next == NULL)
-		return (*head);
-	previous = NULL;
-	while (*head != NULL)
+	while (h != NULL)
 	{
-		next = (*head)->next;
-		(*head)->next = previous;
-		previous = *head;
-		*head = next;
+		h = h->next;
+		nnodes++;
 	}
-	*head = previous;
-	return (*head);
+	return (nnodes);
 }
